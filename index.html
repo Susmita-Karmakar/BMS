@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<style>
+    .success,
+    .error {
+        color: white;
+        padding: 10px;
+    }
+
+    .success {
+        background-color: green;
+    }
+
+    .error {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-8 offset-2">
+                <div id="message"></div>
+                <form id="form" method="post">
+                    <label>Book Name</label><br>
+                    <input type="text" id="name" class="form-control"><br>
+                    <label>Author Name</label><br>
+                    <input type="text" id="author" class="form-control"><br>
+                    <label>ISBN No</label><br>
+                    <input type="text" id="isbn" class="form-control"><br>
+                    <input type="submit" value="Add Book" class="btn btn-danger">
+                </form>
+            </div>
+            <div class="col-md-8 offset-2 mt-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="display">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
